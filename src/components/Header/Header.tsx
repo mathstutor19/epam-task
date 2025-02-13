@@ -31,7 +31,11 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li className="navbar__item">
-            <Link className="navbar__link navbar__link-circle" to="/"></Link>
+            <Link
+              aria-label="profil"
+              className="navbar__link navbar__link-circle"
+              to="/"
+            ></Link>
           </li>
         </ul>
         <button
