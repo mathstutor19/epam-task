@@ -9,8 +9,8 @@ const Product = () => {
       <p className="product__text">
         A cript , smooth taste with a splash of citrus and long finish
       </p>
-      <button className="prev-button"></button>
-      <button className="next-button"></button>
+      <button aria-label="Aria Prev Button" className="prev-button"></button>
+      <button aria-label="Aria Next Button" className="next-button"></button>
       <div className="button__wrapper">
         <ButtonLink color="red" title="Where to buy" link="/" />
         <ButtonLink color="black" title="Learn More" link="/" />
