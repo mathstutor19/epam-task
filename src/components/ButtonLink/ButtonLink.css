@@ -1,0 +1,23 @@
+.product__link {
+  padding: 15px 20px;
+  color: white;
+  border-radius: 4px;
+}
+
+.product__link-red {
+  background-color: #aa2f25;
+  transition: all 0.4s ease-in-out;
+}
+
+.product__link-red:hover {
+  background-color: #91281f;
+}
+
+.product__link-black {
+  background-color: #212123;
+  transition: all 0.4s ease-in-out;
+}
+
+.product__link-black:hover {
+  background-color: #0e0e0f;
+}

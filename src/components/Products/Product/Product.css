@@ -1,0 +1,123 @@
+.product {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.product::before {
+  content: "";
+  display: block;
+  width: 220px;
+  height: 400px;
+  background-image: url("../../../assets/bottle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: -6%;
+}
+
+.product::after {
+  content: "";
+  display: block;
+  width: 220px;
+  height: 400px;
+  background-image: url("../../../assets/bottle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  right: -6%;
+  top: 40px;
+}
+
+.product__image {
+  max-width: 220px;
+  margin: auto;
+}
+
+.product__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.product__text {
+  font-size: 20px;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 46%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: rgb(61, 61, 61);
+  border: solid 1px rgb(61, 61, 61);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-button {
+  left: 17%;
+  background-image: url("../../../assets/prev-arror.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.next-button {
+  right: 17%;
+  background-image: url("../../../assets/next-arror.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.button__wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+  .product::after,
+  .product::before {
+    display: none;
+  }
+
+  .prev-button,
+  .next-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .prev-button {
+    left: 10%;
+    background-image: url("../../../assets/prev-arror.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .next-button {
+    right: 10%;
+    background-image: url("../../../assets/next-arror.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
