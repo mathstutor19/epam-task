@@ -13,7 +13,6 @@
   color: white;
 }
 
-
 .welcome__text {
   margin-top: 40px;
   color: white;
@@ -25,9 +24,5 @@
   .welcome__content {
     transform: translate(-50%, -10%);
     width: 90%;
-  }
-
-  .welcome__input {
-    padding: 15px 60px 15px 20px;
   }
 }

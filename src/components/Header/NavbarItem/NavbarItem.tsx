@@ -1,12 +1,10 @@
 import { Link } from "react-router";
 import "./NavbarItem.css";
-interface NavbarItemProps {
-  item: { id: number; name: string; path: string };
-}
-[];
+import { NavbarItemProps } from "./NavbarItem.type";
+
 const NavbarItem: React.FC<NavbarItemProps> = ({ item }) => {
   return (
-    <li  className="navbar__item">
+    <li className="navbar__item">
       <Link className="navbar__link" to={item.path}>
         {item.name}
       </Link>
