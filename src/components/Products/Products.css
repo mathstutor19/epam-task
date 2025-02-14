@@ -53,11 +53,6 @@
   text-underline-offset: 10px;
 }
 
-.products__content {
-  display: flex;
-  justify-content: center;
-}
-
 .products__image {
   width: 300px;
   height: 500px;
@@ -71,9 +66,7 @@
 }
 
 @media (max-width: 768px) {
-  .products__content {
-    flex-direction: column;
-  }
+  
   .products__image {
     display: none;
   }

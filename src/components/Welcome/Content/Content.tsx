@@ -1,3 +1,4 @@
+import SearchInput from "../SearchInput/SearchInput";
 import "./Content.css";
 const Content = () => {
   return (
@@ -5,13 +6,13 @@ const Content = () => {
       <h3 className="welcome__content__title">
         We're here to help you make the most of cocktail hours
       </h3>
-      <input
+      <SearchInput
+        placeholder="Search for ..."
         className="welcome__input"
         type="text"
-        placeholder="Search for ..."
       />
       <p className="welcome__text">
-        Browse our curoud cocktail by coctail name, occasion or key ingredient
+        Browse our curated cocktail by cocktail name, occasion or key ingredient
       </p>
     </div>
   );

@@ -5,7 +5,7 @@ const Welcome = () => {
   return (
     <section className="welcome">
       <div className="welcome__container">
-        <Title />
+        <Title text="Welcome to Coctail" />
         <Content />
       </div>
     </section>

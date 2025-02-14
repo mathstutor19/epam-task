@@ -12,9 +12,7 @@ const Products: React.FC = () => {
             Make every party a cocktail party. <span>Explore our vodkas.</span>
           </p>
         </div>
-        <div className="products__content">
-          <Product />
-        </div>
+        <Product />
       </div>
     </section>
   );

@@ -1,0 +1,36 @@
+.navbar__item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+
+.navbar__link-circle {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 2px #eacecd;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar__right .navbar__item-right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__items {
+    display: none;
+    justify-content: flex-start;
+  }
+
+  .navbar__right {
+    display: none;
+  }
+}

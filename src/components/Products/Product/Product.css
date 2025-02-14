@@ -1,3 +1,8 @@
+.products__content {
+  display: flex;
+  justify-content: center;
+}
+
 .product {
   position: relative;
   width: 100%;
@@ -49,43 +54,6 @@
   opacity: 0.7;
 }
 
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 46%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  color: rgb(61, 61, 61);
-  border: solid 1px rgb(61, 61, 61);
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.prev-button {
-  left: 17%;
-  background-image: url("../../../assets/prev-arror.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.next-button {
-  right: 17%;
-  background-image: url("../../../assets/next-arror.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.prev-button:hover,
-.next-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
 .button__wrapper {
   display: flex;
   gap: 20px;
@@ -93,31 +61,13 @@
   margin-top: 30px;
 }
 
-
-
 @media (max-width: 768px) {
+  .products__content {
+    flex-direction: column;
+  }
+  
   .product::after,
   .product::before {
     display: none;
-  }
-
-  .prev-button,
-  .next-button {
-    width: 50px;
-    height: 50px;
-  }
-
-  .prev-button {
-    left: 10%;
-    background-image: url("../../../assets/prev-arror.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .next-button {
-    right: 10%;
-    background-image: url("../../../assets/next-arror.svg");
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }

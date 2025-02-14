@@ -1,0 +1,20 @@
+.navbar__item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar__link {
+  color: #5b5b5b;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar__link:hover {
+  color: #1a1919;
+}
+
+@media (max-width: 768px) {
+  .navbar__items {
+    display: none;
+    justify-content: flex-start;
+  }
+}

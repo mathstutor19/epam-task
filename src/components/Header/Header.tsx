@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./Header.css";
-import logo from "../../assets/react.svg";
-import hamburger from "../../assets/hamburger.svg";
-import { Link } from "react-router";
 import { navbarLinks } from "../../constant/navbarLink";
+import Logo from "./Logo/Logo";
+import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
+import Profil from "./Profil/Profil";
+import NavbarItem from "./NavbarItem/NavbarItem";
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
@@ -13,38 +14,13 @@ const Navbar: React.FC = () => {
         <div className="navbar__left">
           <ul className={`navbar__items ${isMenuOpen ? "mobile-menu" : ""}`}>
             {navbarLinks.map((item) => (
-              <li key={item.id} className="navbar__item">
-                <Link className="navbar__link" to={item.path}>
-                  {item.name}
-                </Link>
-              </li>
+              <NavbarItem key={item.id} item={item} />
             ))}
           </ul>
-          <Link className="navbar__link" to="/">
-            <img src={logo} alt="logo" className="navbar__logo" />
-          </Link>
+          <Logo />
         </div>
-        <ul className="navbar__right">
-          <li className="navbar__item navbar__item-right">
-            <Link className="navbar__link " to="/">
-              Where to Find Us
-            </Link>
-          </li>
-          <li className="navbar__item">
-            <Link
-              aria-label="profil"
-              className="navbar__link navbar__link-circle"
-              to="/"
-            ></Link>
-          </li>
-        </ul>
-        <button
-          className="menu-button"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle Menu"
-        >
-          <img src={hamburger} alt="menu" />
-        </button>
+        <Profil />
+        <HamburgerMenu onClick={() => setIsMenuOpen(!isMenuOpen)} />
       </div>
     </nav>
   );
